@@ -11,6 +11,7 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    self.all.artist.name
+    binding.pry
+    self.artist
   end
 end
