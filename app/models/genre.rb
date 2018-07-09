@@ -12,7 +12,7 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     self.artists.each do |name|
-      name
+      self.name
   end
 end
 end
